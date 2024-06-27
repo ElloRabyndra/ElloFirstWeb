@@ -1,0 +1,247 @@
+/* CSS Reset */
+/*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
+
+/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  Remove list styles (bullets/numbers)
+  in case you use it with normalize.css
+*/
+ol, ul {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%;
+}
+
+/* Removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+/* STYLE */
+body {
+  font: 16px/28px "Montserrat", sans-serif;
+  background-color: ffffff;
+}
+
+.header {
+  background-color: white;
+  box-sizing: border-box;
+  min-width: 500px;
+  height: 115px;
+  padding: 30px;
+}
+
+.header .judul {
+   font-size: 50px;
+   width: 100%;
+  font-weight:bold ;
+  color: rgb(33, 33, 33);
+}
+
+.header ul li {
+  display: inline-block;
+  margin-top: 18px;
+  margin-right: 10px;
+}
+
+.header a {
+  text-decoration:none;
+  font-weight: bold;
+  padding: 4px;
+  color: #ff9706;
+}
+
+.header a:hover {
+  background-color: #d47f08;
+  color: white;
+  cursor: pointer;
+}
+
+.header a:active {
+  background-color: #b36c09;
+}
+
+.img {
+  overflow: hidden;
+  height: 30vmax;
+  box-sizing: border-box;
+  border-top: 8px solid #d47f08;
+  border-bottom: 8px solid #d47f08;
+  box-shadow: 0px 3.5px 10px rgba(0, 0, 0,0.5);
+  width: 100%;
+  background-image: url(../gambarCSS/wallp.png);
+  background-position: center 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main {
+  margin: 20px;
+}
+
+.main h2 {
+  font-size: 2.8em;
+  text-align: center;
+  font-weight:bold ;
+  color: rgb(33, 33, 33);
+}
+
+.main #about h2 {margin-top: 10px;}
+#about {padding-top: 5px;}
+
+.main #pendidikan h2 {margin: 30px 0px 10px;}
+#pendidikan {padding: 10px;}
+
+.main #hobbies h2 {margin-top: 5px; margin-bottom: 35px; word-spacing: 5px;} 
+#hobbies {padding-top: 20px;}
+
+#about {
+  display: flex;
+  padding: 1.6em;
+  flex-direction: column;
+}
+
+.gambar {
+  box-sizing: border-box;
+  margin: 60px auto;
+}
+
+.gambar img {
+  display: block;
+  margin: 20px auto;
+  width: 250px;
+  height: 240px;
+  border-radius: 50%;
+  border: 8px solid #d47f08 ;
+}
+
+.perkenalan {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  font-family: 'Merriweather', serif;
+  font-size: 2.25em;
+  line-height: 1.2em;
+  justify-content: center;
+  text-align: center;
+  margin: 20px auto;
+}
+
+#pendidikan {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.sd-smp, .sma-kuliah {
+  margin-top: 25px;
+}
+
+.logoPend {
+  margin: 0 50px;
+  width: 280px;
+  height: 280px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#pendidikan .logoPend img {
+  margin-top: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+#hobbies {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+}
+
+.list-hobi {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+}
+
+#hobbies .list-hobi p {
+display: inline-block;
+margin-top: auto;
+font-size: 30px;
+padding-top: 15px;
+margin-bottom: auto;
+margin-left: 10px;
+}
+
+#hobbies .list-hobi img {
+  padding-right: 20px;
+  margin-right: 20px;
+  width: 240px;
+}
+
+#footer {
+  background-color: #d47f08;
+  height: 50px;
+}
+
+#footer ul {
+  text-align: center;
+  padding-top: 8px;
+}
+
+#footer  li  {
+display: inline-block;
+margin: auto;
+}
+
+#footer a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  display: block;
+  padding: 5px;
+}
+
+ #footer a:hover {
+  color: rgb(227, 227, 227);
+  cursor: pointer;
+}
+  
+@media screen and (min-width:768px) {
+  .sd-smp, .sma-kuliah {
+    display: flex;
+  }
+
+  .list-hobi {
+    flex-direction: row;
+  }
+}

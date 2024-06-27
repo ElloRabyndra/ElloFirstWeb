@@ -89,7 +89,7 @@ body {
   border-bottom: 8px solid #d47f08;
   box-shadow: 0px 3.5px 10px rgba(0, 0, 0,0.5);
   width: 100%;
-  background-image: url(../gambarCSS/wallp.png);
+  background-image: url(gambarCSS/wallp.png);
   background-position: center 0px;
   background-repeat: no-repeat;
   background-size: cover;

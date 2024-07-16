@@ -67,6 +67,7 @@ body {
 .header a {
   text-decoration:none;
   font-weight: bold;
+  font-size: 1.2em;
   padding: 4px;
   color: #ff9706;
 }
